@@ -10,18 +10,18 @@ var message=[
        var html;
         
         for( var i=0;i<message.length;i++){
-
+            var list="<ol>"
             questions=message[i][0];
             answers=message[i][1];
-            response=prompt(questions);
+            response=questions;
             if(response===answers){
                 correct+=1;
-              
+              list="<li>"+questions+"</li>";
 
             }
             
 
-
+            list+="</ol>"
 
         }
 
@@ -35,6 +35,13 @@ got.innerHTML=oupt;
 }
 
 
+
+function log(){
+    var game = document.getElementById("x").nodeValue;
+  
+
+}
+alert(game);
 
 
 
